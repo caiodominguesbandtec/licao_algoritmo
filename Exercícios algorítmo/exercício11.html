@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_11</title>
+</head>
+<body>
+    Digite a nota do aluno na avaliação continuada <input id="nota_continuada" autofocus><br>
+    Digite a nota do aluno na avaliação semestral <input id="nota_semestral"><br>
+    Digite o nome do aluno <input id="nome"><br>
+    <button onclick="calcular()">Calcular a média</button>
+    <script>
+        function calcular()
+        {
+            var média = (nota_continuada.value*0.4 + nota_semestral.value*0.6);
+            alert (`A média de ${nome.value} será de ${média.toFixed(1)}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exerício_12</title>
+</head>
+<body>
+    Digite quanto tempo cada torneira ficou pingando <br>
+    <input id="torneira1" autofocus><br>
+    <input id="torneira2"><br>
+    <input id="torneira3"><br>
+    <button onclick="calcular()">Calcular disperdício</button>
+    <script>
+        function calcular ()
+        {
+            var desperdicio = 15*torneira1.value + 15*torneira2.value + 15*torneira3.value;
+            alert(`Suas 3 torneiras, juntas, desperdiçaram ${desperdicio} litros de água`); 
+        }
+    </script>
+</body>
+</html>

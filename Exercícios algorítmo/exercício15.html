@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_15</title>
+</head>
+<body>
+    Digite o número de moedas depositadas por cada filho <br>
+    <input id="moedas_huguinho" autofocus><br> 
+    <input id="moedas_zezinho"><br>
+    <input id="moedas_luizinho"><br>
+    <button onclick="calcular()">Calcular economia</button>
+    <script>
+        function calcular()
+        {
+            var economia_huguinho = moedas_huguinho.value*0.5;
+            var economia_zezinho = moedas_zezinho.value*0.5;
+            var economia_luizinho = moedas_luizinho.value*0.5;
+            alert(`O Huguinho economizou R$ ${economia_huguinho} pois fez ${moedas_huguinho.value} depósitos`);
+            alert(`O Huguinho economizou R$ ${economia_zezinho} pois fez ${moedas_zezinho.value} depósitos`);
+            alert(`O Huguinho economizou R$ ${economia_luizinho} pois fez ${moedas_luizinho.value} depósitos`);
+        }
+    </script>
+</body>
+</html>

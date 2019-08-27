@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_10</title>
+</head>
+<body>
+    Digite o nome do guerreiro sayajin <input id="nome" autofocus><br>
+    Digite o ki padrão dele <input id="ki_padrao"><br>
+    <button onclick="calcular()">Ver o ki em cada forma</button>
+    <script>
+        function calcular ()
+        {
+            var ki_super_sayajin = ki_padrao.value*50;
+            var ki_super_sayajin_2 = ki_padrao.value*100;
+            alert(`O seu ki de ${nome.value} em forma super sayajin é de ${ki_super_sayajin}`);
+            alert(`O seu ki de ${nome.value} em forma super sayajin 2 é de ${ki_super_sayajin_2}`);
+        }
+    </script>
+</body>
+</html>

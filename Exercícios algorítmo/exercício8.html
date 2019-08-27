@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_8</title>
+</head>
+<body>
+    Digite o valor da passagem <input id="preco_passagem" autofocus><br>
+    Digite quantas viagens você fará por mês <input id="viagens"><br>
+    <button onclick="calcular()">Ver economia</button>
+    <script>
+        function calcular()
+        {
+            var economia = preco_passagem.value*viagens.value/2;
+            alert(`Você economizará R$ ${economia} por mês`);
+        }
+    </script>
+</body>
+</html>

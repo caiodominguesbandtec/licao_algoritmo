@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_14</title>
+</head>
+<body>
+    Digite o número de casquinhas e de pães franceses que comestes hoje <br>
+    <input id="casquinhas" autofocus><br>
+    <input id="paes"><br>
+    Digite quantos minutos de caminhada e musculação você realizou hoje <br>
+    <input id="caminhada"><br>
+    <input id="musculacao"><br>
+    <button onclick="calcular()">saldo de calorias</button>
+    <script>
+        function calcular()
+        {
+            var saldo_de_calorias = casquinhas.value*300+paes.value*100-caminhada.value*50-musculacao.value*30;
+            alert(`Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de ${saldo_de_calorias}`)
+        }
+    </script>
+</body>
+</html>

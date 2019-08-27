@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercício_9</title>
+</head>
+<body>
+    Digite a quantidade de ingressos para estudantes foram vendidos <input id="ingresso_estudante"><br>
+    Digite a quantidade de ingressos comuns foram vendidos <input id="ingresso_comum"><br>
+    Digite o preço do ingresso comum <input id="preco_ingresso_comum"><br>
+    <button onclick="calcular()">Arrecadação</button>
+    <script>
+        function calcular()
+        {
+            var Arrecadação = ingresso_comum.value*preco_ingresso_comum.value + ingresso_estudante.value*preco_ingresso_comum.value/2;
+            alert(`A arrecadação foi de R$ ${Arrecadação}`);
+        }
+    </script>
+</body>
+</html>
